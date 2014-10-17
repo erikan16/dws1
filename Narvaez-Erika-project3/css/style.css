@@ -1,0 +1,240 @@
+body {
+	font-family: 'Arimo', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-repeat: repeat;
+
+}
+
+/* includes the header and content */
+
+#wrapper {
+	width: 80%;
+	max-height: 100%;
+	margin: 3% auto;
+	border-radius: 25px;
+	box-shadow: 6px 6px 15px 5px #284859;
+	background-color: rgb(248,255,249);
+	overflow: auto;
+}
+
+/*1st Column styles*/
+
+#content {
+	float: left;
+	width: 60%;
+	margin-left: 3%; 
+}
+
+/* styles the title  */
+
+#title {
+	font-family: 'Raleway', sans-serif;
+    background-image: url('../images/bike.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: block;
+	font-size: 3em; 
+	text-align: center;
+	margin: 1% auto;
+	padding: 10% 1% 1% 1%;
+	text-shadow: 3px -3px 6px #969696; 
+}
+
+/* beginning of main navigation */
+
+.nav li {
+	display: inline-block;
+	width: 22%;
+	text-align: center;
+	padding: 1%;
+	margin: 1% auto;
+	background-color: rgb(27,202,232);
+}
+
+.nav li a, .nav li:hover, .nav li a:visited {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1em;
+	text-decoration: none;
+	color: #000;
+}
+
+
+.nav li:hover {
+	background-color: #1EDEFF;
+	padding: 1%;
+}
+
+
+.nav li a:visited {
+	color: #3C5669;
+	background-color: #1EDEFF;
+	padding: 1%;
+}
+
+/* end of main navigation */
+
+/* beginning mini navigation */
+
+.nav2 li {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	padding: .70%;
+	margin: .50% auto;
+	background-color: rgb(27,202,232);
+}
+
+.nav2 li a, .nav li:hover, .nav li a:visited {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1em;
+	text-decoration: none;
+	color: #000;
+}
+
+
+.nav2 li:hover {
+	background-color: #1EDEFF;
+	padding: .70%;
+}
+
+
+.nav2 li a:visited {
+	color: #3C5669;
+	background-color: #1EDEFF;
+	padding: .70%;
+}
+
+/* end of mini navigation */
+
+/* styles content */
+
+p {
+	font-family: 'Arimo', sans-serif;
+	font-size: .90em;
+	font-style: normal;
+	line-height: 1.2em;
+	margin-left: 1%;
+}
+
+/* styles content links */
+
+p a:link {
+	font-size: .90em;
+	line-height: 1.2em;
+	color: #0a3cf8;
+	text-decoration: none;
+}
+
+/* styles content links - hover */
+
+p a:hover {
+	font-size: .90em;
+	line-height: 1.2em;
+	color: #0af815;
+	text-decoration: underline;
+}
+
+/* styles content links - visited */
+
+p a:visited {
+	font-size: .90em;
+	line-height: 1.2em;
+	color: #910C30;
+	text-decoration: none;
+}
+
+/* styles content links - active */
+
+p a:active { 
+	color: #f82b0a;
+}
+ 
+/* styles headers */
+
+h2 {
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5em;
+	text-indent: 1%;
+    font-size: 2em;
+    font-style: oblique;
+    letter-spacing: .30em;
+}
+
+/* styles subheaders */
+
+.subheader {
+	font-size: 1em;
+	margin-left: 1%;
+}
+
+/* styles un-ordered listed */
+
+.types ul li {
+	font-size: .80em;
+	list-style-type: circle;
+	line-height: 1.2em;
+	margin-left: 3%;
+}
+
+/* styles ordered listed */
+
+.types ol li {
+	font-size: .80em;
+	list-style-type: circle;
+	line-height: 1.2em;
+	margin-left: 3%;
+}
+
+/* styles Gallery section */
+
+/* styles the header inside the gallery section */
+#pictures h2 {
+	color: #535556;
+	background-color: #fff;
+	margin: 5%;
+	padding: 3%;
+}
+
+/*2nd Column styles*/
+
+#pictures {
+	float: right;
+	font-size: .75em;
+	text-align: center; 
+	width: 30%;
+	height: 10%;
+	margin: 3% 3% 0 0;
+	padding-bottom: 5%;
+	border-radius: 10px;
+	background: linear-gradient(#f87308,#f6c25e);
+}
+
+/* styles the image and border inside the gallery section */
+
+#pictures figure img {
+	display: inline-block;
+	border: 3px solid rgb(0, 4, 250);
+	width: 90.5%;
+	height: 80.5%;
+}
+
+#pictures figure a {
+	display: inline-block;
+	width: 90.5%;
+	height: 80.5%;
+}
+
+/* styles Gallery section - hover */
+
+#pictures figure img:hover {
+	border: 3px solid #FFF100;
+	width: 90.5%;
+	height: 80.5%;
+}
+
+/* clears the Back to Top link */
+
+.top {
+	clear: left;
+}
+
