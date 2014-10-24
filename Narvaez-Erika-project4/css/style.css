@@ -40,24 +40,20 @@ body {
 	text-shadow: 3px -3px 6px #969696; 
 }
 
+/* footer */
+footer {
+    background-color: #49afcd;
+    clear: both;
+    padding: 20px;
+    border-top: #0af815 solid 2px;
+}
+/* footer */
+
 /* beginning of main navigation */
 
-nav {
-	display: inline-block;
-	width: 22%;
-	text-align: center;
-	padding: 1%;
-	margin: 1% auto;
-	background-color: rgb(27,202,232);
-}
-
 nav ul {
-    display: inline-block;
-    width: 22%;
-    text-align: center;
     padding: 1%;
     margin: 1% auto;
-    background-color: rgb(27,202,232);
 }
 
 nav li {
@@ -173,7 +169,6 @@ h2 {
 	font-family: 'Poiret One', cursive;
 	font-size: 1.5em;
 	text-indent: 1%;
-    font-size: 2em;
     font-style: oblique;
     letter-spacing: .30em;
 }
@@ -254,5 +249,141 @@ h2 {
 
 .top {
 	clear: left;
+}
+
+/* Table Styles */
+
+table {
+    font-family: 'Arimo', sans-serif;
+    font-size: .90em;
+    font-style: normal;
+    width: 620px;
+    text-align: center;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+#header th {
+    background-color: #f87308;
+    color: #ffffff;
+    text-shadow: 3px 2px 4px #B65607;
+    padding: 2%;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#kind th {
+    background-color: #f6c25e;
+    color: #ffffff;
+    padding: 1.5%;
+    font-size:1em;
+    font-weight: 500;
+    letter-spacing: .3em;
+    text-shadow: 3px 2px 3px #D28D0D;
+}
+
+th,td {
+    border: solid 1px #000;
+}
+
+tbody tr td {
+    padding: 1.2%;
+    color: #f87308;
+    font-weight: 400;
+}
+
+tbody tr td:hover {
+    background-color: #8699a4;
+    color: #000000;
+}
+
+.colorTd td {
+    background-color: #f87308;
+    color: #ffffff;
+    padding: 1.3%;
+}
+
+#form h2 {
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+#form {
+    width: 700px;
+    margin: 10px auto;
+    clear: both;
+    background-color: #1EDEFF;
+    border-radius: 51px;
+}
+
+fieldset {
+    width: 600px;
+    margin: 10px 0 0 10%;
+    border: none;
+}
+
+legend {
+    font-style: normal;
+    color: #000;
+}
+
+.title {
+    float: left;
+    width: 50px;
+    clear: left;
+}
+
+/* Styles the Name and Email area */
+
+.textInput {
+    border: 1px solid #666;
+    width: 210px;
+    padding: 3px;
+}
+
+/* Styles the input boxes background color */
+
+input:hover, input:focus {
+    background-color: #ffff9e;
+}
+
+/* Styles the Additional Comments area */
+
+textarea {
+    width: 260px;
+    height:100px;
+}
+
+textarea:hover, textarea:focus {
+    background-color: #ffff9e;
+}
+
+/* Styles the send button in Form */
+
+#button {
+    color: #fff;
+    background: linear-gradient(#BC0B3A,#860729);
+    padding: 8px 18px;
+    border-radius: 10px;
+    border-color: #910C30;
+    font-size: 1em;
+}
+
+#button:hover {
+    color: #fff;
+    background: linear-gradient(#860729,#BC0B3A);
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#button:active {
+    color: #fff;
+    background: linear-gradient(#860729,#BC0B3A);
+    padding: 8px 18px;
+    border-radius: 10px;
+    border-color: #1EDEFF;
+    font-size: 1em;
 }
 

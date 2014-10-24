@@ -9,7 +9,13 @@
 	  	<link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css" />
 	  	<link href="http://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css" />
 	  	<link href="http://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css" />
-	</head> 
+        <script type="text/javascript">
+            function display_alert()
+            {
+                alert("Thank you for thoughts!");
+            }
+        </script>
+    </head>
 	<body>  
 	  <!-- wraps nav, content, and gallery -->
 	    <div id="wrapper">
@@ -23,7 +29,7 @@
 					    <li><a href="#uses">Uses</a></li>
 					    <li><a href="#social">Historical Aspects</a></li>
 				    </ul>
-			    </nav>>
+			    </nav>
             </header>
 			<!-- Navigation Ends -->
 			
@@ -92,6 +98,70 @@
                 <p>Unicycles, tricycles and quadracycles are not strictly bicycles,
                     as they have respectively one, three and four wheels, but are often
                     referred to informally as <q>bikes</q>.</p>
+
+                <table>
+                    <thead>
+                        <tr id="header">
+                            <th scope="col" colspan="4">bicycle types</th>
+                        </tr>
+                        <tr id="kind">
+                            <th scope="col">Function</th>
+                            <th scope="col">Sport</th>
+                            <th scope="col">Frame Design</th>
+                            <th scope="col">Style</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Road bicycles</td>
+                            <td>Road racing bicycles</td>
+                            <td>Penny-farthing</td>
+                            <td>Dekocharis</td>
+                        </tr>
+                        <tr class="colorTd">
+                            <td>Touring bicycles</td>
+                            <td>BMX</td>
+                            <td>Safety bicycle</td>
+                            <td>Lowrider bicycles </td>
+                        </tr>
+                        <tr>
+                            <td>Randonneur or Audax</td>
+                            <td>Cyclo-cross </td>
+                            <td>Recumbent bicycle </td>
+                            <td>Scraper bikes</td>
+                        </tr>
+                        <tr class="colorTd">
+                            <td>Hybrid bicycles</td>
+                            <td>Downhill bikes </td>
+                            <td>Prone bike</td>
+                            <td>Chopper bicycles</td>
+                        </tr>
+                        <tr>
+                            <td>Flat bar road bikes</td>
+                            <td>Enduro </td>
+                            <td>Crank forward</td>
+                            <td>Huck bikes </td>
+                        </tr>
+                        <tr class="colorTd">
+                            <td>Cyclo-cross bike</td>
+                            <td>Track bicycles </td>
+                            <td>Pedersen bicycle </td>
+                            <td>Clown bicycles </td>
+                        </tr>
+                        <tr>
+                            <td>Utility bicycles </td>
+                            <td>Time trial bicycles </td>
+                            <td>Folding bicycle </td>
+                            <td>Sideways bikes </td>
+                        </tr>
+                        <tr class="colorTd">
+                            <td>Mountain bicycles </td>
+                            <td>Triathlon </td>
+                            <td>Step-through </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
 			 	 
@@ -225,18 +295,13 @@
                     which helped liberate women from corsets and ankle-length skirts
                     and other restrictive garments, substituting the then-shocking
                     bloomers.</p>
-            </section>
 
-             <p id="top"><a href="#title">Back to Top</a></p>
+                 <p id="top"><a href="#title">Back to Top</a></p>
+             </section>
 
-             <footer>
-                 <p>Link to Wikipedia: <a href="http://en.wikipedia.org/wiki/Bicycle">http://en.wikipedia.org/wiki/Bicycle</a></p>
-             </footer>
+            </div> <!-- End of Column 1 -->
 
-
-             </div> <!-- End of Column 1 -->
-
-             <aside> <!-- Begining Column 2 /this is going to float right -->
+            <aside id="pictures"> <!-- Begining Column 2 /this is going to float right -->
                 <h2>Gallery</h2>
 
                 <figure>
@@ -256,7 +321,48 @@
                     <a href="images/bike4.jpg"><img src="images/bike4.jpg" alt="Bike Racing" /></a><br/>
                     <figcaption>Bikes used for racing</figcaption>
                 </figure>
-             </aside> <!-- End of Column 2 -->
+            </aside> <!-- End of Column 2 -->
+
+            <div id="form">
+                <h2>Let us know what you think</h2>
+                <form action="mailto:erikan16@fullsail.edu" method="post">
+                    <fieldset>
+                        <legend>We appreciate your feedback!</legend>
+
+                        <p>
+                            <label class="title" for="name">Name: </label><input id="name" type="text" name="name" placeholder="John Smith" class="textInput" required="required"/><br>
+                            <label class="title" for="email">Email:</label> <input id="email" type="email" name="email" placeholder="email@example.com" class="textInput" required="required"/>
+                        </p>
+                        <p>
+                            <label>Do you own a bike?</label>
+                            <input id="yes" type="radio" name="own a bike" checked />
+                            <label for="yes">Yes</label>
+                            <input id="no" type="radio" name="own a bike" />
+                            <label for="no">No</label>
+                        </p>
+                        <p>
+                            <label for="info">Was the information useful?</label>
+                            <select name="useful info" id="info">
+                            <option value="of course" selected="selected">Of Course</option>
+                            <option value="a little">A little</option>
+                            <option value="not really">Not Really</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="comment">Additional Comments:</label><br>
+                            <textarea id="comment" placeholder="Write your comment in here."></textarea>
+                        </p>
+                        <p>
+                            <input id="button" type="submit" name="SEND" onclick="display_alert()" value="SEND" data-popup-target="#"/>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+            <footer>
+                <h3 class="subheader">References:</h3>
+                <p>Link to Wikipedia: <a href="http://en.wikipedia.org/wiki/Bicycle">http://en.wikipedia.org/wiki/Bicycle</a></p>
+                <p>Link to Wikipedia: <a href="http://en.wikipedia.org/wiki/List_of_bicycle_types">http://en.wikipedia.org/wiki/List_of_bicycle_types</a></p>
+            </footer>
         </div> <!-- Ends wrap for nav, content, and gallery -->
     </body>
 </html>
